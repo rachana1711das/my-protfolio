@@ -1,0 +1,384 @@
+/* spacing on all sections */
+.section {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+.section:last-of-type {
+    padding-bottom: 4rem;
+}
+    
+/* hero background image */
+.bgimage {
+    background: linear-gradient(135deg, #2c3e50, #343a50, #4e4376, #5a4688, #6a5acd, #826bc5, #8a79c9, #a080d7);
+    background-size: 200% 200%;
+    animation: gradientAnimation 15s ease infinite;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}  
+/* text css above hero image*/
+.hero_title {
+    padding-top: 10rem;
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+    
+    width: 80%;
+}
+.hero_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image_about {
+    width: 100%;
+}
+
+.navbarDark {
+    background: #000;
+}
+
+
+ .social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover, 
+.fa-twitch:hover {
+    color: #fff;
+}
+.fab {
+    color: #000000;
+}
+
+.center-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicesText.card {
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #2f322f;
+}
+.servicesText:hover {
+    border: 1px solid #2f322f;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    bottom: 10px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.toggle-button:hover {
+    transform: scale(1.1);
+}
+
+.expanded .toggle-button {
+    transform: rotate(180deg) scale(1.1);
+}
+
+.description {
+    max-height: 0;
+    overflow: scroll;
+    transition: max-height 0.3s ease;
+}
+
+.expanded .description {
+    max-height: 200px; /* Adjust the max-height as needed */
+}
+
+.blue-gradient-text {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.align-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.collapsible {
+    background: linear-gradient(135deg, #2c3e50, #343a50, #4e4376, #5a4688, #6a5acd, #826bc5, #8a79c9, #a080d7);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Align content to space between */
+    align-items: center;
+}
+
+.collapsible:hover {
+    background-color: #555;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+}
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: scroll;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+
+  /* experiance section */ 
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background: linear-gradient(135deg, #2c3e50, #343a50, #4e4376, #5a4688, #6a5acd, #826bc5, #8a79c9, #a080d7);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container-exp {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container-exp::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #9a9896;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent black;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent black transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content-exp {
+    padding: 20px 30px;
+    background: linear-gradient(135deg, #2c3e50, #343a50, #4e4376, #5a4688, #6a5acd, #826bc5, #8a79c9, #a080d7);
+    position: relative;
+    border-radius: 6px;
+    color: white;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .container-exp {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .container-exp::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+  }
+
+  /* Contact section */
+
+  .icon-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .icon-container a {
+    color: #333;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .icon-container a:hover {
+    transform: scale(1.2);
+  }
+
+  .icon-container a.phone:hover {
+    color: #007bff;
+  }
+
+  .icon-container a.mail:hover {
+    color: #007bff;
+  }
+
+  .icon-container a.linkedin:hover {
+    color: #0077b5; /* LinkedIn blue color */
+  }
+
+/* Style the scrollbar for the entire page */
+body::-webkit-scrollbar {
+    width: 2px; /* Width of the scrollbar */
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the handle */
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the handle on hover */
+}
+
+/* Apply the same scrollbar style to all scrollable content */
+*::-webkit-scrollbar {
+    width: 2px; /* Width of the scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the handle */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the handle on hover */
+}

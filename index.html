@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio Website-Brad</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    <!-- linking css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <!-- https://getbootstrap.com/docs/5.2/components/navbar/ -->
+    <!-- Add class of bg-light to nav element -->
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Rachana Das</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Skills</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiance">Experiance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- main banner -->
+    <!-- https://getbootstrap.com/docs/5.2/layout/containers/ -->
+    <!-- https://getbootstrap.com/docs/5.2/layout/grid/ -->
+    <section class="container-fluid section bgimage" id="home">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero_text">
+                <h2 class="hero_title">Unveiling the Odyssey</h2>
+                <p class="hero_desc mt-4">Charting the Path of a React.js Virtuoso</p>
+                <p class="hero_desc mt-4">Passionate about Data Science, Crafting Tomorrow's Solutions Today </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="container mt-4 pt-4 section" id="about">
+        <h1 class="text-center">About Me</h1>
+
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <img src="images/myself.jpg" class="image_about" alt="">
+            </div>
+
+            <div class="col-lg-6">
+                <h3>
+                    Hello, and welcome to my portfolio!
+
+                </h3>
+                <p>
+                    I am a seasoned Senior Software Developer with over 5 years of rich experience in the industry.
+                    Throughout my career, I've had the privilege of contributing to various projects across different
+                    companies, specializing in front-end development. My journey in software engineering has been both
+                    challenging and rewarding, allowing me to cultivate a deep understanding of React.js while
+                    navigating the ever-evolving landscape of technology.
+                </p>
+                <p>
+
+                    Beyond my expertise in software development, I am also deeply passionate about Data Science. I've
+                    actively pursued certifications and opportunities to expand my knowledge in this field, consistently
+                    seeking to integrate data-driven insights into my projects.
+                </p>
+                s<p>
+                    In addition to my proficiency in web development and data analysis, I have hands-on experience in
+                    developing mobile applications, further broadening my skill set and adaptability in today's
+                    mobile-first world.
+                </p>
+
+                <div class="row mt-3">
+                    <p>
+                        Outside of the tech realm, I find joy in exploring my hobbies of cooking and traveling. As a
+                        mother of two children, I've mastered the art of multitasking and thrive in high-pressure
+                        environments. I am a firm believer in continuous learning and personal growth, always seizing
+                        opportunities to enhance my skills and stay ahead of industry trends.
+
+                        Thank you for visiting my portfolio. I invite you to explore further and discover the projects
+                        and experiences that define my journey as a software developer and a lifelong learner.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section-->
+    <!-- https://getbootstrap.com/docs/5.2/components/card/#about -->
+    <section class="container section" id="experiance">
+        <h1 class="text-center">Skills</h1>
+        <button class="collapsible">Experianced Skills</button>
+
+        <div class="content">
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body center-flex">
+                            <img src="images/react.png" width="50" height="50" alt="" />
+                            <h4 class="card-title mt-3">React.js</h4>
+                            <div class="blue-gradient-text align-text">
+                                Years of Experiance:5+<br>
+                                Level Of Expertise: Expert
+                            </div>
+                            <p class="card-text mt-3 description">React.js is a powerful JavaScript library widely used
+                                for
+                                building user interfaces, offering a declarative and component-based approach to
+                                front-end
+                                development.
+                                Its virtual DOM efficiently updates the UI, enhancing performance and user experience.
+                                With React, developers can create reusable UI components, enabling faster development
+                                cycles
+                                and easier maintenance.
+                                Its ecosystem, including tools like Redux for state management and React Router for
+                                navigation, empowers developers to build complex web applications with ease.
+                            </p>
+                            <button class="toggle-button" onclick="toggleDescription(this)">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText ">
+                        <div class="card-body center-flex">
+                            <img src="images/nextjs.jpg" width="50" height="50" alt="" />
+                            <h4 class="card-title mt-3">Next.js</h4>
+                            <div class="blue-gradient-text align-text">
+                                <p>Years of Experiance:2+</p>
+                                <p>Level Of Expertise: Professional</p>
+                            </div>
+                            <p class="card-text mt-3 description">Next.js is a powerful React framework that simplifies
+                                the
+                                creation of server-rendered applications.
+                                By providing built-in features like server-side rendering and automatic code splitting,
+                                Next.js enables developers to build performant and SEO-friendly web applications with
+                                ease.
+                                With its intuitive file-based routing system and support for both client-side and
+                                server-side rendering, Next.js offers a seamless development experience.
+                                Additionally, Next.js provides features such as static site generation, API routes, and
+                                built-in CSS and image optimization, making it a comprehensive solution for building
+                                modern
+                                web applications.
+                            </p>
+                            <button class="toggle-button" onclick="toggleDescription(this)">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText ">
+                        <div class="card-body center-flex">
+                            <img src="images/node.png" width="50" height="50" alt="" />
+                            <h4 class="card-title mt-3">Node.js</h4>
+                            <div class="blue-gradient-text align-text">
+                                <p>Years of Experiance:1+</p>
+                                <p>Level Of Expertise: Basic</p>
+                            </div>
+                            <p class="card-text mt-3 description">Node.js, a runtime environment built on Chrome's V8
+                                JavaScript engine, empowers developers to execute JavaScript code outside of a web
+                                browser.
+                                Renowned for its event-driven architecture and non-blocking I/O operations, Node.js
+                                enables
+                                scalable and efficient server-side development.
+                                With its vast ecosystem of libraries and packages available through npm, Node.js
+                                facilitates
+                                rapid development of networked applications.
+                                Its versatility extends from building web servers and APIs to powering real-time
+                                applications and microservices architectures.
+                                Node.js, embraced by tech giants and startups alike, continues to revolutionize
+                                server-side
+                                development, offering unparalleled performance and scalability for modern web
+                                applications.
+                            </p>
+                            <button class="toggle-button" onclick="toggleDescription(this)">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText ">
+                        <div class="card-body center-flex">
+                            <img src="images/javascript.png" width="50" height="50" alt="" />
+                            <h4 class="card-title mt-3">JavaScript</h4>
+                            <div class="blue-gradient-text align-text">
+                                <p>Years of Experiance:5+</p>
+                                <p>Level Of Expertise: Expert</p>
+                            </div>
+                            <p class="card-text mt-3 description">JavaScript is a versatile and dynamic programming
+                                language
+                                primarily used for front-end web development.
+                                Renowned for its flexibility and compatibility across browsers, JavaScript empowers
+                                developers to create interactive and responsive user interfaces.
+                                With its event-driven architecture and support for asynchronous programming, JavaScript
+                                facilitates seamless communication with servers, enabling the creation of dynamic web
+                                applications.
+                                Its extensive ecosystem of libraries and frameworks, such as React, Vue.js, and Angular,
+                                further enhances development efficiency and fosters innovation.
+                                From simple website enhancements to complex single-page applications, JavaScript
+                                continues
+                                to be a cornerstone of modern web development, driving innovation and interactivity on
+                                the
+                                internet.
+                            </p>
+                            <button class="toggle-button" onclick="toggleDescription(this)">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText ">
+                        <div class="card-body center-flex">
+                            <img src="images/type.jpg" width="50" height="50" alt="" />
+                            <h4 class="card-title mt-3">TypeScript</h4>
+                            <div class="blue-gradient-text align-text">
+                                <p>Years of Experiance:3+</p>
+                                <p>Level Of Expertise: Professional</p>
+                            </div>
+                            <p class="card-text mt-3 description">TypeScript, a superset of JavaScript, introduces
+                                static
+                                typing to the familiar syntax of JavaScript, enabling developers to catch errors early
+                                in
+                                the development process.
+                                With its optional static typing, TypeScript provides increased code maintainability and
+                                scalability for large projects.
+                                Its robust type system allows for clearer documentation and better tooling support,
+                                enhancing developer productivity and code quality.
+                                TypeScript compiles down to plain JavaScript, ensuring compatibility with existing
+                                JavaScript frameworks and libraries while offering advanced features such as interfaces,
+                                generics, and decorators.
+                                Overall, TypeScript empowers developers to build more reliable and maintainable
+                                applications
+                                while leveraging the flexibility and ecosystem of JavaScript.
+                            </p>
+                            <button class="toggle-button" onclick="toggleDescription(this)">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText ">
+                        <div class="card-body center-flex">
+                            <img src="images/redux.png" width="50" height="50" alt="" />
+                            <h4 class="card-title mt-3">Redux</h4>
+                            <div class="blue-gradient-text align-text">
+                                <p>Years of Experiance:4+</p>
+                                <p>Level Of Expertise: Professional</p>
+                            </div>
+                            <p class="card-text mt-3 description">Redux is a state management library for JavaScript
+                                applications, commonly used with React for managing application state in large-scale and
+                                complex projects.
+                                It employs a unidirectional data flow architecture, maintaining a single immutable state
+                                tree that serves as the source of truth for the entire application.
+                                Redux facilitates predictable state management by dispatching actions, which are plain
+                                JavaScript objects describing state changes.
+                                Reducers then specify how the application's state should change in response to these
+                                actions.
+                                With its centralized store and middleware support, Redux simplifies debugging, testing,
+                                and
+                                maintaining application state, offering developers a robust solution for building
+                                scalable
+                                and maintainable web applications.
+                            </p>
+                            <button class="toggle-button" onclick="toggleDescription(this)">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText ">
+                        <div class="card-body center-flex">
+                            <img src="images/html.png" width="50" height="50" alt="" />
+                            <h4 class="card-title mt-3">HTML5</h4>
+                            <div class="blue-gradient-text align-text">
+                                <p>Years of Experiance:5+</p>
+                                <p>Level Of Expertise: Expert</p>
+                            </div>
+                            <p class="card-text mt-3 description">HTML5, the latest iteration of Hypertext Markup
+                                Language,
+                                serves as the backbone of modern web development, offering a robust framework for
+                                structuring and presenting content on the internet.
+                                With its semantic elements, HTML5 provides clearer and more meaningful tags for defining
+                                page structure, enhancing accessibility and search engine optimization.
+                                Its native support for multimedia elements such as audio and video allows for seamless
+                                integration of rich media content, facilitating engaging user experiences.
+                                Furthermore, HTML5 introduces advanced features like local storage and offline
+                                capabilities,
+                                empowering web applications to function efficiently even without an internet connection.
+                                As a cornerstone of web development, HTML5 continues to drive innovation and shape the
+                                digital landscape, enabling developers to create dynamic and interactive websites
+                                tailored
+                                to meet the evolving demands of the modern web.
+                            </p>
+                            <button class="toggle-button" onclick="toggleDescription(this)">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText ">
+                        <div class="card-body center-flex">
+                            <img src="images/css.png" width="50" height="50" alt="" />
+                            <h4 class="card-title mt-3">CSS</h4>
+                            <div class="blue-gradient-text align-text">
+                                <p> Years of Experiance:5+</p>
+                                <p>Level Of Expertise: Professional</p>
+                            </div>
+                            <p class="card-text mt-3 description">CSS, or Cascading Style Sheets, is a fundamental
+                                language
+                                for web development that defines the visual presentation of HTML elements.
+                                It allows developers to control various aspects of a webpage appearance, including
+                                layout,
+                                colors, fonts, and animations.
+                                CSS works by selecting HTML elements and applying styles to them, either directly within
+                                an
+                                HTML document or through an external stylesheet.
+                                Its versatility enables the creation of responsive and visually appealing websites
+                                across
+                                different devices and screen sizes. With CSS, developers can achieve intricate designs,
+                                improve user experience, and ensure consistency in branding and design elements
+                                throughout a
+                                website.
+                            </p>
+                            <button class="toggle-button" onclick="toggleDescription(this)">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText ">
+                        <div class="card-body center-flex">
+                            <img src="images/tailwind.jpg" width="50" height="50" alt="" />
+                            <h4 class="card-title mt-3">Tailwind css</h4>
+                            <div class="blue-gradient-text align-text">
+                                <p>Years of Experiance:3+</p>
+                                <p>Level Of Expertise: Professional</p>
+                            </div>
+                            <p class="card-text mt-3 description">Tailwind CSS is a utility-first CSS framework that
+                                streamlines web development by providing a vast array of pre-built utility classes.
+                                Unlike traditional frameworks, Tailwind encourages a "utility-first" approach, where
+                                styles
+                                are applied directly in the HTML markup, enabling rapid prototyping and flexibility in
+                                design.
+                                With Tailwind, developers can easily create responsive, customizable, and consistent UIs
+                                without writing custom CSS, thanks to its extensive utility classes for layout,
+                                typography,
+                                colors, and more.
+                                This approach promotes code reusability, maintainability, and efficiency, making
+                                Tailwind
+                                CSS a preferred choice for modern web development projects.
+                            </p>
+                            <button class="toggle-button" onclick="toggleDescription(this)">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="collapsible mt-2">Other Skills</button>
+
+        <div class="row content">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText ">
+                    <div class="card-body center-flex">
+                        <img src="images/agile.jpg" width="50" height="50" alt="" />
+                        <h4 class="card-title mt-3">Agile methodology</h4>
+                        <div class="blue-gradient-text align-text">
+                            <p>Years of Experiance:5+</p>
+                            <p> Worked with agile projects</p>
+                        </div>
+                        <p class="card-text mt-3 description">Agile methodology is a flexible and iterative approach to
+                            software development that emphasizes adaptability, collaboration, and continuous
+                            improvement.
+                            By breaking down projects into smaller increments called sprints, Agile enables teams to
+                            deliver working software more frequently and efficiently.
+                            Through regular feedback loops with stakeholders and team members, Agile promotes
+                            transparency and customer satisfaction by prioritizing features based on business value.
+                            Its core principles, such as responding to change over following a plan and valuing
+                            individuals and interactions over processes and tools, foster a dynamic and collaborative
+                            work environment.
+                            Agile encourages self-organizing teams to make decisions collectively, promoting creativity
+                            and innovation while ensuring project goals are met effectively.
+                            Overall, Agile methodology empowers teams to respond quickly to changing requirements,
+                            deliver high-quality software, and continuously enhance their processes for better outcomes.
+                        </p>
+                        <button class="toggle-button" onclick="toggleDescription(this)">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText ">
+                    <div class="card-body center-flex ">
+                        <img src="images/python.png" width="50" height="50" alt="" />
+                        <h4 class="card-title mt-3">Python</h4>
+                        <div class="blue-gradient-text align-text">
+                            <p>Years of Experiance:Fresher</p>
+                            <p>Certificate in python for data science</p>
+                        </div>
+                        <p class="card-text mt-3 description">Python is a cornerstone in the realm of data science,
+                            renowned for its versatility and robust ecosystem of libraries.
+                            With its intuitive syntax and extensive libraries such as NumPy, Pandas, and Matplotlib,
+                            Python enables seamless data manipulation, analysis, and visualization.
+                            Its integration with powerful frameworks like TensorFlow and PyTorch facilitates deep
+                            learning and machine learning tasks.
+                            Python's popularity stems from its ability to streamline complex data workflows, making it
+                            the preferred choice for data scientists seeking efficiency and innovation in their
+                            analytical endeavors.
+                        </p>
+                        <button class="toggle-button" onclick="toggleDescription(this)">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText ">
+                    <div class="card-body center-flex">
+                        <img src="images/datascience.png" width="50" height="50" alt="" />
+                        <h4 class="card-title mt-3">Machine Learning</h4>
+                        <div class="blue-gradient-text align-text">
+                            <p>Years of Experiance:Fresher</p>
+                            <p>Certificate in Machine Learning for data science</p>
+                        </div>
+                        <p class="card-text mt-3 description">Machine Learning is a branch of artificial intelligence
+                            that empowers computer systems to learn from data patterns and make intelligent decisions
+                            without explicit programming.
+                            Through algorithms and statistical models, it enables machines to recognize complex
+                            patterns, make predictions, and adapt their behavior based on new information.
+                            Machine Learning finds applications in various domains, including finance, healthcare,
+                            e-commerce, and more, revolutionizing industries with its ability to automate tasks,
+                            optimize processes, and uncover insights from large datasets.
+                            Its versatility and capacity to continuously improve performance make it a cornerstone of
+                            modern technological advancements, shaping the future of innovation and decision-making.
+                        </p>
+                        <button class="toggle-button" onclick="toggleDescription(this)">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="container section" id="experience">
+        <h1 class="text-center">Experiance</h1>
+
+        <div class="timeline">
+            <div class="container-exp left">
+                <div class="content-exp">
+                    <h2>2015-2016</h2>
+                    <p>Objectstream software Solutions</p>
+                    <p>Junior Software Developer</p>
+                </div>
+            </div>
+            <div class="container-exp right">
+                <div class="content-exp">
+                    <h2>2019-2021</h2>
+                    <p> Naico ITS</p>
+                    <p>Junior Software Developer</p>
+                </div>
+            </div>
+            <div class="container-exp left">
+                <div class="content-exp">
+                    <h2>2021-2022</h2>
+                    <p>Emvigo Technologies pvt ltd</p>
+                    <p>Technical Consultant level-II</p>
+                </div>
+            </div>
+            <div class="container-exp right">
+                <div class="content-exp">
+                    <h2>2022-2024</h2>
+                    <p>NEOITO</p>
+                    <p>SDE-2</p>
+                </div>
+            </div>
+            <div class="container-exp left">
+                <div class="content-exp">
+                    <h2>2024-Present</h2>
+                    <p>Pumex Infotech</p>
+                    <p>Senior Software Engineer</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="container section" id="contact">
+        <h1 class="text-center">Contact</h1>
+        <div class="icon-container">
+            <a href="tel:+1234567890" class="phone" title="Call Me"><i class="fas fa-phone-alt"></i></a>
+            <a href="mailto:someone@example.com" class="mail" title="Email Me"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/yourprofile" class="linkedin" target="_blank" title="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </section>
+
+    <!-- contact section-->
+    <!-- https://getbootstrap.com/docs/5.2/forms/overview -->
+
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
