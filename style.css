@@ -334,17 +334,6 @@
     transform: scale(1.2);
   }
 
-  .icon-container a.phone:hover {
-    color: #007bff;
-  }
-
-  .icon-container a.mail:hover {
-    color: #007bff;
-  }
-
-  .icon-container a.linkedin:hover {
-    color: #0077b5; /* LinkedIn blue color */
-  }
 
 /* Style the scrollbar for the entire page */
 body::-webkit-scrollbar {
